@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Task = ({ task }) => {
+const Task = ({ task }) => {
   return (
     <div className="task">
       <h3>{task.text}</h3>
@@ -8,3 +8,5 @@ export const Task = ({ task }) => {
     </div>
   );
 };
+
+export default Task;
