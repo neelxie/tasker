@@ -1,7 +1,7 @@
-import React, { useState  } from 'react'
+import React, { useState } from "react";
 
-import Header from './components/Header';
-import Tasks from './components/Tasks'
+import Header from "./components/Header";
+import Tasks from "./components/Tasks";
 function App() {
   const [tasks, setTasks] = useState([
     {
@@ -23,14 +23,14 @@ function App() {
       reminder: false,
     },
   ]);
-  // delete task 
+  // delete task
   const deleteTask = (id) => {
-    console.log('Delete', id); 
-  }
+    setTasks(tasks.filter((task) => task.id !== id));
+  };
   return (
     <div className="container">
       <Header />
-      <Tasks tasks={tasks} onDelete={deleteTask}/>
+      <Tasks tasks={tasks} onDelete={deleteTask} />
     </div>
   );
 }
