@@ -23,6 +23,12 @@ function App() {
       reminder: false,
     },
   ]);
+
+  // add task
+
+  const addTask = (task) => {
+    console.log('new');
+  }
   // delete task
   const deleteTask = (id) => {
     setTasks(tasks.filter((task) => task.id !== id));
