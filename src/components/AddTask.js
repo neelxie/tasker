@@ -18,7 +18,7 @@ export const AddTask = ({ onAdd }) => {
     setReminder("");
   };
   return (
-    <form className="add-form" onSubmit={onsubmit}>
+    <form className="add-form" onSubmit={onSubmit}>
       <div className="form-control">
         <label>Task</label>
         <input
